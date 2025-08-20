@@ -1,0 +1,30 @@
+{
+    "extName": {
+        "message": "Select and Export",
+        "description": "Extension name"
+    },
+    "extDescription": {
+        "message": "Highlight text, save selections and export them as .txt",
+        "description": "Extension description"
+    },
+    "title": {
+        "message": "Select and Export",
+        "description": "Popup title"
+    },
+    "subtitle": {
+        "message": "Your selections:",
+        "description": "Subtitle in popup"
+    },
+    "clear": {
+        "message": "Clear selections",
+        "description": "Button to clear selections"
+    },
+    "empty": {
+        "message": "No selections yet. Select some text and then come back here.",
+        "description": "Message when no selections"
+    },
+    "alert": {
+        "message": "Unable to download. No selections available.",
+        "description": "Alert when trying to download empty list"
+    }
+}

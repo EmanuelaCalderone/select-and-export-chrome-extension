@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select and Export</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Flag Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css"/>
+    <!-- Css -->
+    <link rel="stylesheet" href="popup.css" />
+</head>
+
+<body>
+
+    <header class="header">
+        <!-- night mode -->
+        <div class="icons">
+            <div>
+                <button><i class="fa-solid fa-moon night-icon"></i></button>
+            </div>
+            <!-- languages -->
+            <div class="flags">
+                <button><span class="fi fi-it"></span></button>
+                <button><span class="fi fi-gb"></span></button>
+            </div>
+        </div>
+
+        <!-- title -->
+        <h3 class="title"></h3>
+         <!-- subtitle -->
+        <h4 class="subtitle"></h4>
+
+    </header>
+
+    <main>
+         <!-- selection list -->
+        <div id="list" class="list empty"></div>
+    </main>
+
+
+    <footer class="footer">
+
+        <!-- clear button -->
+        <button id="clear" class="buttons" type="button"></button>
+        <!-- download button -->
+        <button id="download" class="buttons" type="button">Download</button>
+
+    </footer>
+    
+    <script src="popup.js"></script>
+
+</body>
+</html>

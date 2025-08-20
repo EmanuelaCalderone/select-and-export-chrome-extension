@@ -1,0 +1,30 @@
+{
+    "extName": {
+        "message": "Seleziona ed esporta",
+        "description": "Nome estensione"
+    },
+    "extDescription": {
+        "message": "Evidenzia testo, salva selezioni ed esportale in .txt",
+        "description": "Descrizione estensione"
+    },
+    "title": {
+        "message": "Seleziona ed esporta",
+        "description": "Titolo del popup"
+    },
+    "subtitle": {
+        "message": "Hai selezionato:",
+        "description": "Sottotitolo nel popup"
+    },
+    "clear": {
+        "message": "Cancella selezioni",
+        "description": "Bottone per cancellare le selezioni"
+    },
+    "empty": {
+        "message": "Nessuna selezione. Seleziona del testo e torna qui.",
+        "description": "Messaggio quando non ci sono selezioni"
+    },
+    "alert": {
+        "message": "Impossibile scaricare. Nessuna selezione presente.",
+        "description": "Alert quando lista vuota"
+    }
+}

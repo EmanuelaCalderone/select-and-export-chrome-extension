@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(250, 248, 248);
+    color: rgb(59, 58, 58);
+    width: 250px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.empty {
+    border: 1px solid rgb(191, 190, 190);
+    border-radius: 5px;
+    padding: 8px;
+    line-height: 20px;
+}
+
+h3,
+p,
+.count,
+.list,
+.footer {
+    margin-bottom: 8px;
+}
+
+.newItem {
+    margin-bottom: 8px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+#clear,
+#download {
+    margin: 8px;
+}
+
+.buttons {
+    flex: 0.5;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    color: rgb(224, 221, 221);
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+#clear {
+    background-color: rgb(197, 95, 95);
+}
+
+#download {
+    background-color: rgb(12, 151, 135);
+}
+
+/*modalità notte*/
+html.night-mode,
+html.night-mode body {
+    background-color: black;
+    color: white;
+}
+
+.night-mode .night-icon {
+    color: white;
+    background-color: transparent;
+}
+
+.night-mode .title {
+    color: white;
+}
