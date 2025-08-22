@@ -10,10 +10,8 @@
         "default_icon": "s_e.png"
     },
     "permissions": [
-        "storage"
-    ],
-    "host_permissions": [
-        "<all_urls>"
+        "storage",
+        "activeTab"
     ],
     "content_scripts": [
         {
