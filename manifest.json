@@ -10,7 +10,23 @@
         "default_icon": "s_e.png"
     },
     "permissions": [
-        "storage",
-        "activeTab"
+        "storage"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content/content.js"
+            ],
+            "css": [
+                "content/content.css"
+            ],
+            "run_at": "document_idle"
+        }
     ]
 }
