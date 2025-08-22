@@ -10,20 +10,7 @@
         "default_icon": "s_e.png"
     },
     "permissions": [
-        "storage"
-    ],
-    "content_scripts": [
-        {
-            "matches": [
-                "https://*/*"
-            ],
-            "js": [
-                "content/content.js"
-            ],
-            "css": [
-                "content/content.css"
-            ],
-            "run_at": "document_idle"
-        }
+        "storage",
+        "activeTab"
     ]
 }

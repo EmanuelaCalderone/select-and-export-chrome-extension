@@ -201,3 +201,29 @@ chrome.storage.local.get({ theme: "light", lang: "en" }, function (result) {
     applyTranslation(result.lang);
     showSelections();
 })
+
+//codice per iniettare il content script
+document.addEventListener('DOMContentLoaded', () => {
+    const runButton = document.getElementById('runScript');
+
+    if (runButton) {
+        runButton.addEventListener('click', async () => {
+            //recupero la scheda attiva
+            const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+
+            if (tab) {
+                //inietto il CSS
+                await chrome.scripting.insertCSS({
+                    target: { tabId: tab.id },
+                    files: ['content/content.css']
+                });
+
+                //inietto il JS
+                await chrome.scripting.executeScript({
+                    target: { tabId: tab.id },
+                    files: ['content/content.js']
+                });
+            }
+        });
+    }
+});
